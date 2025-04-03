@@ -19,8 +19,8 @@ else{
 },[dark])
  console.log(dark)
   return (
-    <div className='flex flex-col h-screen items-center justify-center bg-white dark:bg-slate-800 w-screen'>
-    <div onClick={()=>(setDark((prev)=>(!prev)))} className='bg-green-300 p-4 rounded-2xl font-bold hover:scale-105 duration-700'>{!dark ?"Dark Mode" : "Light Mode"} </div>
+    <div className='flex flex-col min-h-screen items-center justify-center bg-white dark:bg-slate-800 min-w-screen space-y-10'>
+    <div onClick={()=>(setDark((prev)=>(!prev)))} className='bg-green-300 p-4 rounded-2xl mt-10 font-bold hover:scale-105 duration-700'>{!dark ?"Dark Mode" : "Light Mode"} </div>
       <CardLIst dark={dark} setDark={setDark}/>
        
     </div>

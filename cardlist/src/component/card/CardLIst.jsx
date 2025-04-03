@@ -2,29 +2,29 @@ import React from 'react'
 import pic from '../../../public/pics.avif'
 function CardLIst() {
   return (
-    <div className='flex flex-col md:flex-row md:m-0 md:p-16 m-3 space-y-10 md:space-y-0 md:space-x-10 p-6 rounded-2xl shadow-2xl dark:shadow-white dark:text-white' >
+    <div className='flex flex-col md:flex-row md:m-0 md:p-6 m-3 space-y-6 md:space-y-0 md:space-x-10 p-3 rounded-2xl shadow-2xl dark:shadow-white dark:text-white' >
      <div className='flex flex-col md:flex-row items-center justify-center'>
-        <img className='w-60 h-60 md:h-100 dark:border-4 md:w-60 rounded-2xl hover:scale-105 duration-800'  src={pic}></img>
+        <img className='object-fit  dark:border-4 md:w-60 rounded-2xl hover:scale-105 duration-800'  src={pic}></img>
      </div>
-     <div className='flex flex-col space-y-6  '>
+     <div className='flex flex-col space-y-3  '>
    
-        <div className='flex flex-col mb-4 space-y-3 text-center md:text-left'>
+        <div className='flex flex-col mb-2 space-y-3 text-center md:text-left'>
         <div>
             <div className='inline-block  rounded-full text-white bg-black px-3 py-1  dark:bg-slate-500 '>Free shipping</div>
         </div>
         </div>
         {/* // Product name */}
-        <div className='flex  mt-3  md:text-left flex-col text-2xl md:text-4xl'>
+        <div className='flex text-center  mt-3  md:text-left flex-col text-3xl md:text-3xl'>
         Full Stack Software Developer Course <span className='text-lg ' > (Published by Satyam Sharma)</span>
 
         </div>
         {/* Price value */}
 
-        <div className='flex flex-col text-xl'>
+        <div className='flex text-center flex-col text-sm'>
         <div className='line-through'>$799</div>
-        <div className='mt-2'>
+        <div className=''>
             <p className='text-2xl md:text-4xl'>$399</p>
-            <p className='text-sm mt-2 text-red-500'>The order is valid until April 3 as long as stock lasts!</p>
+            <p className='text-sm text-red-500'>The order is valid until April 3 as long as stock lasts!</p>
         </div>
 
         </div>
